@@ -13,5 +13,5 @@ module.exports = (client, Discord) => {
             }
         }
     }
-    [`fun`, `info`, `config`, `util`, `img`].forEach(e => load_dir(e));
+    [`fun`, `info`, `config`, `util`, /*`img`*/].forEach(e => load_dir(e));
 }
