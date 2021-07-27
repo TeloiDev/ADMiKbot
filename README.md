@@ -12,6 +12,6 @@ tu mnóstwo błędów. Bylibyśmy wdzięczni za pomoc
 
 ### Linki i te sprawy
 
-Link do zaproszenia bota: [Link](https://discord.com/api/oauth2/authorize?client_id=847519219406864434&permissions=8&scope=bot%20applications.commands)
-Support server: [Invite](https://discord.gg/D2YKYXx)
+Link do zaproszenia bota: [Link](https://discord.com/api/oauth2/authorize?client_id=847519219406864434&permissions=8&scope=bot%20applications.commands)<br>
+Support server: [Invite](https://discord.gg/D2YKYXx)<br>
 Github: [Link](https://github.com/opuczek/ADMiKbot-REMOTE)
