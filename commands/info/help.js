@@ -13,7 +13,7 @@ module.exports = {
             const info = fs.readdirSync(`commands/info`).toString().split(`.js,`).join(`, `).slice(0, -3);
             const fun = fs.readdirSync(`commands/fun`).toString().split(`.js,`).join(`, `).slice(0, -3);
             const config = fs.readdirSync(`commands/config`).toString().split(`.js,`).join(`, `).slice(0, -3);
-            const img = fs.readdirSync(`commands/img`).toString().split(`.js,`).join(`, `).slice(0, -3);
+            // const img = fs.readdirSync(`commands/img`).toString().split(`.js,`).join(`, `).slice(0, -3);
 
 
             const embed = new Discord.MessageEmbed()
@@ -25,7 +25,7 @@ module.exports = {
                 { name: `<:3224_info:847522715488354365> Info:`, value: `\`${info}\`` },
                 { name: `<:3999activity:847522715153727545> Fun:`, value: `\`${fun}\`` },
                 { name: `<:settings:847524392690253864> Config:`, value: `\`${config}\`` },
-                { name: `<:image:855511153886494720> Img:`, value: `\`${img}\`` },
+                // { name: `<:image:855511153886494720> Img:`, value: `\`${img}\`` },
                 { name: `<:text:847522715602386984> Legenda:`, value: `\`[]\` jest opcjonalnym argumentem\n\`<>\` jest wymaganym argumentem\n\`{}\` to opcja\nNie wpisuj \`[], <> lub {}\` przy używaniu komend!` },
                 { name: `<:5579developerbadge:847522715791523911> Dołącz po więcej pomocy!`, value: `https://discord.gg/D2YKYXx` }
             )
