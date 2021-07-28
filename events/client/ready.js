@@ -4,7 +4,7 @@ const colors = require(`../../colors.json`);
 module.exports = async (Discord, client) =>{
     
     console.log(`Hello, World!`);
-    client.user.setActivity(`Minecraft`, { type: `PLAYING`});
+    client.user.setActivity(`Ryzyko Deszczu`, { type: `PLAYING`});
     
 
     const guildId = `598620425307684937`;
