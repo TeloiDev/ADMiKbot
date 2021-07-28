@@ -2,7 +2,7 @@ const Discord = require(`discord.js`);
 const client = new Discord.Client();
 // const keepAlive = require(`./server`);
 require(`dotenv`).config();
-const mongoose = require(`mongoose`)
+const mongoose = require(`mongoose`);
 
 client.commands = new Discord.Collection();
 client.events = new Discord.Collection();
@@ -19,9 +19,9 @@ mongoose.connect(process.env.MONGODB_SRV, {
     useUnifiedTopology: true,
     useFindAndModify: false,
 }).then(() => {
-    console.log(`Connected to Mongo!`)
+    console.log(`Connected to Mongo!`);
 }).catch((err) => {
-    console.log(err)
+    console.log(err);
 });
 
 client.login(process.env.TOKEN);

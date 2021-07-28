@@ -35,7 +35,11 @@ module.exports = async (Discord, client, message) => {
         "MANAGE_NICKNAMES",
         "MANAGE_ROLES",
         "MANAGE_WEBHOOKS",
-        "MANAGE_EMOJIS",
+        "MANAGE_EMOJIS_AND_STICKERS",
+        "REQUEST_TO_SPEAK",
+        "MANAGE_THREADS",
+        "USE_PRIVATE_THREADS",
+        "USE_PUBLIC_THREADS",
     ];
     
     const settings = await Guild.findOne({
@@ -76,7 +80,7 @@ module.exports = async (Discord, client, message) => {
 
     if (!command) return;
     if(command.permissions){
-        let invalidPerms = []
+        let invalidPerms = [];
         for(const perm of command.permissions){
           if(!validPermissions.includes(perm)){
             return console.log(`Invalid Permissions ${perm}`);
