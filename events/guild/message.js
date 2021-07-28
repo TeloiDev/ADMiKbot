@@ -104,7 +104,10 @@ module.exports = async (Discord, client, message) => {
         return;
     }
 
-    // counting function
+    /**
+     * Funkcje
+     * @returns
+     */
 
     async function counting() {
         if (message.author.bot) return;
@@ -146,7 +149,6 @@ module.exports = async (Discord, client, message) => {
         }
     }
 
-    // add reactions
     function addReactions(type) {
         switch (type){
             case vote:

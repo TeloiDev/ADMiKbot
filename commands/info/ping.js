@@ -6,7 +6,7 @@ module.exports = {
     usage: `<prefix> ping`,
     aliases: ["latency", `ms`],
     execute(message, args, Discord){
-        message.channel.send(`<a:loading:772902775453515786> Pingowanie...`).then(m => {
+        message.channel.send(`<a:loading:869918141373890620> Pingowanie...`).then(m => {
 
             const ping = m.createdTimestamp - message.createdTimestamp;
 
@@ -15,7 +15,7 @@ module.exports = {
             .setDescription(`Twój ping to **${ping}ms**`)
             .setFooter(message.author.username)
             .setTimestamp()
-            m.edit(embed)
+            m.edit(null, embed)
         });
     }
 }
