@@ -11,7 +11,7 @@ client.slash = new Discord.Collection();
 [`command_handler`, `events_handler`, `slash_handler`].forEach(handler => {
     require(`./handlers/${handler}`)(client, Discord);
 });
-
+// this is a prototype
 // keepAlive();
 
 mongoose.connect(process.env.MONGODB_SRV, {
