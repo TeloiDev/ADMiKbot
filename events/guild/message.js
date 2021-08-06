@@ -65,7 +65,7 @@ module.exports = async (Discord, client, message) => {
     
     let prefix;
     if (!settings) {
-        prefix = `?`;
+        prefix = `.`;
     } else {
         prefix = settings.prefix;
     }
