@@ -26,7 +26,7 @@ module.exports = {
         const context = canvas.getContext('2d');
 
         const background = await Canvas.loadImage('./assets/memes/drake.png');
-        context.textAlign = `center`;
+        
         context.drawImage(background, 0, 0, canvas.width, canvas.height);
 
 
@@ -43,7 +43,7 @@ module.exports = {
         };
         
         context.strokeRect(0, 0, canvas.width, canvas.height);
-
+        context.textAlign = `center`;
         context.font = applyText(canvas, msg);
         context.fillStyle = '#ffffff';
         context.fillText(msg, 84, 410);
