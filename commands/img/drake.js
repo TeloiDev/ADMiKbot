@@ -50,7 +50,7 @@ module.exports = {
 
         
 
-        const attachment = new Discord.MessageAttachment(canvas.toBuffer(), `worst-places.png`);
+        const attachment = new Discord.MessageAttachment(canvas.toBuffer(), `drake.png`);
         message.channel.send(attachment);
     }
 }

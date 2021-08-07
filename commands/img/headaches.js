@@ -24,7 +24,7 @@ module.exports = {
         
             do {
                 context.font = `${fontSize -= 20}px sans-serif`;
-            } while (context.measureText(text).width > canvas.width - 10);
+            } while (context.measureText(text).width > 10);
         
             // Return the result to use in the actual canvas
             return context.font;
