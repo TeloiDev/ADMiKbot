@@ -22,7 +22,7 @@ module.exports = {
 
         
 
-        const canvas = Canvas.createCanvas(300, 392);
+        const canvas = Canvas.createCanvas(300, 292);
         const context = canvas.getContext('2d');
 
         const background = await Canvas.loadImage('./assets/memes/drake.png');
@@ -36,17 +36,17 @@ module.exports = {
         
             do {
                 context.font = `${fontSize -= 10}px sans-serif`;
-            } while (context.measureText(text).width > canvas.width - 100);
+            } while (context.measureText(text).width > canvas.width - 20);
         
             // Return the result to use in the actual canvas
             return context.font;
         };
         
         context.strokeRect(0, 0, canvas.width, canvas.height);
-        context.textAlign = `center`;
         context.font = applyText(canvas, msg);
-        context.fillStyle = '#ffffff';
-        context.fillText(msg, 84, 410);
+        context.fillStyle = '0';
+        context.fillText(msg[0], 154, 60);
+        context.fillText(msg[1], 154, 220);
 
         
 
