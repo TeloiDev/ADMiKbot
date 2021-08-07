@@ -3,9 +3,9 @@ const Canvas = require(`canvas`);
 module.exports = {
     name: `drake`,
     category: `img`,
-    description: "Wygeneruj meme z templatem \"Drake\"",
+    description: "Wygeneruj meme z templatem \"Drake\". Oddziel teksty przecinkiem (,)",
     permissions: [],
-    usage: `<prefix> drake <tekst1>, <text2>`,
+    usage: `<prefix> drake <tekst1>,<text2>`,
     aliases: [`yes-no`, `drk`],
     async execute(message, args, Discord, client, prefix, colors, command){
         msg = args.join(` `).split(`,`);
