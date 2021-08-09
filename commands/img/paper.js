@@ -38,7 +38,6 @@ module.exports = {
         context.fillText(msg, 400, 512);
 
         
-        console.log(context.font)
         const attachment = new Discord.MessageAttachment(canvas.toBuffer(), `paper.png`);
         message.channel.send(attachment);
     }
