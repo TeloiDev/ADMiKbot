@@ -24,4 +24,4 @@ mongoose.connect(process.env.MONGODB_SRV, {
     console.log(err);
 });
 
-client.login(process.env.TOKEN_BETA);
+client.login(process.env.TOKEN);

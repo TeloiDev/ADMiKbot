@@ -64,13 +64,13 @@ module.exports = async (Discord, client, message) => {
 
     
     let prefix = ',';
-    /*
+    
     if (!settings) {
         prefix = `.`;
     } else {
         prefix = settings.prefix;
     }
-    */
+    
     
 
     if (!message.content.startsWith(prefix) || message.author.bot) return;
