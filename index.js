@@ -1,6 +1,6 @@
 const Discord = require(`discord.js`);
 const client = new Discord.Client();
-// const keepAlive = require(`./server`);
+const keepAlive = require(`./server`);
 require(`dotenv`).config();
 const mongoose = require(`mongoose`);
 
@@ -12,7 +12,7 @@ client.slash = new Discord.Collection();
     require(`./handlers/${handler}`)(client, Discord);
 });
 
-// keepAlive();
+keepAlive();
 
 mongoose.connect(process.env.MONGODB_SRV, {
     useNewUrlParser: true,
