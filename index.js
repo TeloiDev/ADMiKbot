@@ -1,15 +1,16 @@
 const Discord = require(`discord.js`);
-const client = new Discord.Client();
+const client = new Discord.Client({
+    intents: [Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MESSAGES],
+});
 // const keepAlive = require(`./server`);
 require(`dotenv`).config();
 const mongoose = require(`mongoose`);
 
 client.commands = new Discord.Collection();
 client.events = new Discord.Collection();
-client.slash = new Discord.Collection();
 
-[`command_handler`, `events_handler`, `slash_handler`].forEach(handler => {
-    require(`./handlers/${handler}`)(client, Discord);
+[`command_handler`, `events_handler`].forEach(handler => {
+    require(`./src/handlers/${handler}`)(client, Discord);
 });
 
 // keepAlive();
