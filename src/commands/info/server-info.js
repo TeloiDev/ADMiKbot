@@ -14,7 +14,8 @@ module.exports = {
         const boosts = message.guild.premiumSubscriptionCount;
         const aemojis = message.guild.emojis.cache.filter(e => e.animated).size;
         const emojis = message.guild.emojis.cache.size - aemojis;
-        const bots = message.guild.members.cache.filter(member => member.user.bot).size;
+        const bots = await message.guild.members.cache.fetch().filter(member => member.user.bot).size;
+        const bots = await client.guilds.cache.get(message.guild.id).members.fetch().then(members => members.filter(member => member.user.bot).size)
         const usersTotal = message.guild.memberCount;
         const users = usersTotal - bots;
 
