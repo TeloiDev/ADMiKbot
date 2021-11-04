@@ -50,7 +50,7 @@ module.exports = {
             .setDescription("")
             .addField(result, `${reacted} vs ${botChoice}`);
 
-        m.edit(embed);
+        m.edit({embeds: [embed]});
 
         function getResult(me, clientChosen) {
             if ((me === "🪨" && clientChosen === "✂") ||
