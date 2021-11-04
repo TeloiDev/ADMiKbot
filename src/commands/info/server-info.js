@@ -47,7 +47,7 @@ module.exports = {
             )
             .addFields(
                 { name: `Nitro`, value: `<:boost:847522715509850172> Boosty: ` + "`" + boosts +  "`" +
-                `\n<:serveboost:847526047602704384> Level: ` + "`" + `${message.guild.premiumTier}/3` + "`", inline: true},
+                `\n<:serveboost:847526047602704384> Level: ` + "`" + `${message.guild.premiumTier.split(`_`)[1]}/3` + "`", inline: true},
 
                 { name: `Emoji: ${message.guild.emojis.cache.size}`, value: `<:emoji:847522715547729941> Zwykłe: ` + "`" + emojis + "`" +
                 `\n<a:gears:847526421651390464> Animowane: ` + "`" + aemojis + "`", inline: true},
