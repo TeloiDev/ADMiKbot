@@ -26,14 +26,9 @@ module.exports = async (Discord, client, message) => {
     } catch (e) {}
 
     
-    let prefix = ',';
-    /*
-    if (!settings) {
-        prefix = `.`;
-    } else {
-        prefix = settings.prefix;
-    }
-    */
+    let prefix;
+
+    settings ? prefix = settings.prefix : prefix = `?`;
     
 
     if (!message.content.startsWith(prefix) || message.author.bot) return;
