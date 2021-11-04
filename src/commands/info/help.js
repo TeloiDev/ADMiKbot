@@ -59,7 +59,7 @@ module.exports = {
             .setDescription(
             `\n<:3224_info:847522715488354365> Opis: ` + "`" + vailidArgs.description + "`" + 
             `\n<:5238_categoria_emoji:847522715518369833> Kategoria: ` + "`" + vailidArgs.category + "`" + 
-            `\n<:slash:847522715576958976> Użycie: ` + "`" + vailidArgs.usage + "`" +
+            `\n<:slash:847522715576958976> Użycie: ` + "`" + vailidArgs.usage.replace(/<prefix> /g, prefix) + "`" +
             `\n<:richpresence:847522715556773898> Aliasy: ` + "`" + vailidArgs.aliases.join(`, `)  + "`" +
             `\n<:settings:847524392690253864> Uprawnienia: \`${perms}\`` +
             `\n<:5579developerbadge:847522715791523911> Dołącz do [[tutaj]](https://discord.gg/D2YKYXx) po więcej pomocy!`)
