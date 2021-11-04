@@ -73,10 +73,7 @@ module.exports = async (Discord, client, message) => {
         return;
     }
 
-    /**
-     * Funkcje
-     * @returns
-     */
+
 
     async function counting() {
         if (message.author.bot) return;
