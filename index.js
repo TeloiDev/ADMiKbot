@@ -1,13 +1,8 @@
 const Discord = require(`discord.js`);
-<<<<<<< HEAD
-const client = new Discord.Client();
-const keepAlive = require(`./server`);
-=======
 const client = new Discord.Client({
     intents: [Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MESSAGES],
 });
 const keepAlive = require(`./server`);
->>>>>>> prototype
 require(`dotenv`).config();
 const mongoose = require(`mongoose`);
 

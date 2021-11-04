@@ -26,20 +26,9 @@ module.exports = async (Discord, client, message) => {
     } catch (e) {}
 
     
-<<<<<<< HEAD:events/guild/message.js
-    let prefix = ',';
-    
-    if (!settings) {
-        prefix = `.`;
-    } else {
-        prefix = settings.prefix;
-    }
-    
-=======
     let prefix;
 
     settings ? prefix = settings.prefix : prefix = `?`;
->>>>>>> prototype:src/events/messageCreate.js
     
 
     if (!message.content.startsWith(prefix) || message.author.bot) return;
