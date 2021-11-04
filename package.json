@@ -1,6 +1,6 @@
 {
   "name": "admikbot",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Zabawowy bot dla każdego (czytaj README.md)",
   "main": "index.js",
   "scripts": {
