@@ -7,7 +7,7 @@ const client = new Discord.Client({
         Discord.Intents.FLAGS.GUILD_MEMBERS,
     ],
 });
-const keepAlive = require(`./server`);
+// const keepAlive = require(`./server`);
 require(`dotenv`).config();
 const mongoose = require(`mongoose`);
 
@@ -18,7 +18,7 @@ client.events = new Discord.Collection();
     require(`./src/handlers/${handler}`)(client, Discord);
 });
 
-keepAlive();
+// keepAlive();
 
 mongoose.connect(process.env.MONGODB_SRV, {
     useNewUrlParser: true,
@@ -30,4 +30,4 @@ mongoose.connect(process.env.MONGODB_SRV, {
     console.log(err);
 });
 
-client.login(process.env.TOKEN);
+client.login(process.env.TOKEN_BETA);
