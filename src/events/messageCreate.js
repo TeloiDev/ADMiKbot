@@ -12,12 +12,12 @@ module.exports = async (Discord, client, message) => {
     try {
         if (message.channel.id === settings.memeChannel){
             if (message.attachments.size > 0){
-                addReactions(vote);
+                addReactions("vote");
             }
 
         } else if (message.channel.id === settings.linkChannel){
             if (message.content.includes(`https://`)){
-                addReactions(vote);
+                addReactions("vote");
             }
         }
 
@@ -111,10 +111,11 @@ module.exports = async (Discord, client, message) => {
     }
 
     function addReactions(type) {
+        const getEmoji = (id) => client.emojis.cache.find(e => e.id === id);
         switch (type){
-            case vote:
-                message.react(`847522526422499329`);
-                message.react(`847522526246600734`);
+            case "vote":
+                message.react(getEmoji(`847522526422499329`));
+                message.react(getEmoji(`847522526246600734`));
             break;
         }
         
