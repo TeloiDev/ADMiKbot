@@ -53,7 +53,7 @@ module.exports = {
             `\n<:calendar:847522715568832562> Konto utworzone: ` + "`" + new Date(user.createdTimestamp).toLocaleDateString() + "`" + 
             `\n<:calendar:847522715568832562> Dołączył do ${message.guild}: ` + "`" + new Date(member.joinedTimestamp).toLocaleDateString() + "`" + 
             `\n<:3224_info:847522715488354365> Role: ` + "`" + roles + "`" + 
-            `\n${userStatus[user.presence.status]}` + 
+            `\n${userStatus[member.presence.status]}` + 
             `\n${isRobot[user.bot]}` +
             `\n<:upvote:847522715614707712> Najwyższa rola: ${rolemap[0]}` +
             `\n<:mention:847522715690598420> Avatar:`)
