@@ -15,7 +15,7 @@ module.exports = async (Discord, client) =>{
 
                     const embed = new Discord.MessageEmbed()
                     .setColor(colors.incorrectUsage)
-                    .setDescription(`Z powodu liczenie zostało zresetowane do \`${guildObj.counting.count}\``)
+                    .setDescription(`Z powodu błędu następna liczba to: \`${guildObj.counting.count}\``)
                     .setTimestamp();
                 
                     client.channels.cache
